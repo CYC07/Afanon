@@ -1,8 +1,8 @@
-# Advanced Text Anonymizer 🕵️‍♂️📄
+# Advanced Text Anonymizer
 
 A powerful and configurable Python script for identifying and anonymizing sensitive information within text documents. This tool employs a multi-layered approach, combining Named Entity Recognition (NER), regular expressions, custom wordlists, and fallback heuristics to provide comprehensive PII redaction.
 
-## 🌟 Key Features
+## Key Features
 
 *   **Multi-Layered Detection:**
     *   **Named Entity Recognition (NER):** Leverages NLTK to identify entities like `PERSON`, `ORGANIZATION`, `LOCATION`, `DATE`, `MONEY`, etc. (configurable).
@@ -23,7 +23,7 @@ A powerful and configurable Python script for identifying and anonymizing sensit
 *   **Detailed Logging:** Offers insights into the anonymization process, including found entities and applied replacements (with verbose/debug mode).
 *   **Automatic NLTK Data Check:** Ensures necessary NLTK resources are available and attempts to download them if missing.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -53,3 +53,5 @@ The script is run from the command line:
 
 ```bash
 python anonymizer.py <input_file> <output_file> [options]
+
+
