@@ -1,6 +1,6 @@
-# Advanced Text Anonymizer
+# Advanced Text Anonymizer (afanon) 🕵️‍♂️📄
 
-A powerful and configurable Python script for identifying and anonymizing sensitive information within text documents. This tool employs a multi-layered approach, combining Named Entity Recognition (NER), regular expressions, custom wordlists, and fallback heuristics to provide comprehensive PII redaction.
+A powerful and configurable Python script (`afanon.py`) for identifying and anonymizing sensitive information within text documents. This tool employs a multi-layered approach, combining Named Entity Recognition (NER), regular expressions, custom wordlists, and fallback heuristics to provide comprehensive PII redaction.
 
 ## Key Features
 
@@ -28,7 +28,7 @@ A powerful and configurable Python script for identifying and anonymizing sensit
 ### Prerequisites
 
 *   Python 3.7+
-*   Required Python packages (will be installed from `requirements.txt` if provided, or manually):
+*   Required Python packages (see `requirements.txt`):
     *   `nltk`
     *   `Faker`
 
@@ -41,17 +41,14 @@ A powerful and configurable Python script for identifying and anonymizing sensit
     ```
 2.  **Install dependencies:**
     ```bash
-    pip install nltk faker
+    pip install -r requirements.txt
     ```
-    (If a `requirements.txt` file is added to the project, users can run `pip install -r requirements.txt`)
 
-3.  **NLTK Data:** The script will automatically check and attempt to download required NLTK data packages (`punkt`, `averaged_perceptron_tagger`, `maxent_ne_chunker`, `words`) on its first run. Ensure you have an internet connection.
+3.  **NLTK Data:** The script (`afanon.py`) will automatically check and attempt to download required NLTK data packages (`punkt`, `averaged_perceptron_tagger`, `maxent_ne_chunker`, `words`) on its first run. Ensure you have an internet connection.
 
 ### Usage
 
 The script is run from the command line:
 
 ```bash
-python anonymizer.py <input_file> <output_file> [options]
-
-
+python afanon.py <input_file> <output_file> [options]
